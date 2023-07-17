@@ -121,9 +121,11 @@ fun TaskContainerScope.configureOverwatcheat() {
 
             fun File.copyFromRoot(path: String) = file(path).copyTo(resolve(path), true)
 
-            dir.copyFromRoot("overwatcheat.cfg")
+            dir.copyFromRoot("config.cfg")
             dir.copyFromRoot("LICENSE.txt")
             dir.copyFromRoot("README.md")
+            dir.copyFromRoot("interception.dll")
+
         }
     }
 }

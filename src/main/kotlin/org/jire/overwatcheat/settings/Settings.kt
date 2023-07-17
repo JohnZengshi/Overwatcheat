@@ -55,7 +55,7 @@ object Settings {
     val aimPreciseSleeperType by IntSetting("aim_precise_sleeper_type", PreciseSleeper.YIELD.type)
     val aimCpuThreadAffinityIndex by IntSetting("aim_cpu_thread_affinity_index", -1)
 
-    const val DEFAULT_FILE = "overwatcheat.cfg"
+    const val DEFAULT_FILE = "config.cfg"
 
     fun read(filePath: String = DEFAULT_FILE) = read(File(filePath))
 
